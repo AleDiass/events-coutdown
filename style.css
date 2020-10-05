@@ -1,0 +1,141 @@
+
+body{
+	min-width: 750px;
+	min-height: 350px;
+
+
+	
+	background-color: black;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	z-index: 1;
+}
+
+#imgbackground{
+
+	display:block;
+	background: #ccc;
+	background-size: contain;
+
+
+
+	transition: 1s ease;
+
+	
+	position: absolute;
+	z-index: 0;
+
+	width:100%;
+	height:100%;
+	opacity: 0.4;
+
+	
+}
+
+
+
+
+#container{
+
+	
+	display:flex;
+	justify-content: center;
+	
+	min-height: 90vh;
+	align-items: center;
+	flex-direction: column;
+
+
+}
+
+div#container #event-name{
+	
+	font-size: 1.2em;
+	letter-spacing: 0.2em;
+	color: white;
+}
+#event-name a:visited,
+#event-name a:active,
+#event-name a:link{
+	color:lightblue;
+	text-decoration: none;
+
+}
+
+
+
+
+
+
+
+
+section{
+	
+	padding: 20px;	
+
+}
+
+
+
+section#timer{
+	font-size: 3.5em;
+	letter-spacing: 0.1em;
+	color: white;
+
+}
+
+
+section#legend{
+	font-size: 1em;
+	color:white;
+}
+
+section#legend span{
+	padding: 0px 40px;
+}
+
+
+
+
+
+
+
+section#buttons input{
+	font-size: 1.2em;
+	padding: 5px 12px;
+	margin: 0 20px 0 20px;
+	
+	line-height: 40px;
+	text-transform: uppercase;
+
+	background-color: #2B2C32;
+	color: white;
+
+	border-radius: 20px;
+	outline: none;
+	border: none;
+
+	cursor: pointer;
+
+	border:1px black solid;
+
+
+}
+
+
+section#buttons input:hover{
+	background: #4A4C55;
+	border:1px #838692 solid;
+}
+
+
+
+section#buttons{
+	margin-top: 40px;
+
+
+}
+
