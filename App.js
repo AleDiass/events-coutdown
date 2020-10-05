@@ -1,5 +1,10 @@
 const bg = document.getElementById("imgbackground")
 const title = document.getElementById("event-name")
+const btnNY = document.getElementById("btnNY") 
+const btnES = document.getElementById("btnES")
+const btnCH = document.getElementById("btnCH")
+
+
 //
 const days = document.getElementById('days')
 const hours = document.getElementById('hours')
@@ -37,6 +42,13 @@ function App(event){
 		clearInterval(StartES)
 		clearInterval(StartCH)
 
+		// Disable Button
+		ButtonStyleAdd(btnNY)
+
+		//Enable Buttons
+		ButtonStyleRemove(btnES,btnCH)
+
+
 
 	}
 	else if(event ==='ES'){
@@ -46,6 +58,12 @@ function App(event){
 		StartES = setInterval(Easter,1000)	
 		clearInterval(StartNY)
 		clearInterval(StartCH)
+
+		//Disable Button
+		ButtonStyleAdd(btnES)
+		
+		//Enable Buttons
+		ButtonStyleRemove(btnNY,btnCH)
 
 	}
 	else if(event === 'CH'){
@@ -58,6 +76,14 @@ function App(event){
 		clearInterval(StartNY)
 		clearInterval(StartES)
 		
+		// Disable Button		
+		ButtonStyleAdd(btnCH)
+
+		
+		//Enable Buttons
+		ButtonStyleRemove(btnNY,btnES)
+
+
 	}
 
 
@@ -66,6 +92,25 @@ function App(event){
 
 
 
+
+function ButtonStyleAdd(button){
+	button.disabled = true
+	button.style.opacity = '0.4'
+	button.style.cursor = 'default'
+	button.style.border = '1px white solid'
+}
+
+function ButtonStyleRemove(button1,button2){
+	button1.disabled = false
+	button1.style.opacity = '1'
+	button1.style.cursor = 'pointer'
+	button1.style.border = '1px black solid'
+
+	button2.disabled = false
+	button2.style.opacity = '1'
+	button2.style.cursor = 'pointer'
+	button2.style.border = '1px black solid'
+}
 
 
 
