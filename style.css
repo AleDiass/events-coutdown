@@ -1,141 +1,151 @@
-
-body{
-	min-width: 750px;
-	min-height: 350px;
-
-
-	
-	background-color: black;
+:root{
+	font-size: 62,5%;
 }
 
 *{
+	color:white;
 	margin: 0;
 	padding: 0;
-	z-index: 1;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
 }
 
-#imgbackground{
-
-	display:block;
-	background: #ccc;
-	background-size: contain;
-
-
-
-	transition: 1s ease;
-
-	
-	position: absolute;
-	z-index: 0;
-
-	width:100%;
-	height:100%;
-	opacity: 0.4;
-
-	
+body{
+	width: 100vw;
+	height: 100vh;
 }
 
+#main-div{
+	width: 100%;
+	height: 100%;
 
+	transition: background 0.5s;
+}
 
 
 #container{
-
-	
+	background: rgba(0,0,0,0.7);
+	width: 100%;
+	height: 100%;
 	display:flex;
+	
+	
+	flex-direction: column;
+	align-items: center;
+	border:1px black solid;
 	justify-content: center;
 	
-	min-height: 90vh;
-	align-items: center;
-	flex-direction: column;
-
-
 }
 
-div#container #event-name{
+#timer{
 	
-	font-size: 1.2em;
-	letter-spacing: 0.2em;
-	color: white;
-}
-#event-name a:visited,
-#event-name a:active,
-#event-name a:link{
-	color:lightblue;
-	text-decoration: none;
-
-}
-
-
-
-
-
-
-
-
-section{
+	font-size: 2.5rem;
+	letter-spacing: 1px;
 	
-	padding: 20px;	
-
 }
 
+#timer span{
 
-
-section#timer{
-	font-size: 3.5em;
-	letter-spacing: 0.1em;
-	color: white;
-
-}
-
-
-section#legend{
-	font-size: 1em;
-	color:white;
-}
-
-section#legend span{
-	padding: 0px 40px;
-}
-
-
-
-
-
-
-
-section#buttons input{
-	font-size: 1.2em;
-	padding: 5px 12px;
-	margin: 0 20px 0 20px;
+	display:inline-block;
 	
-	line-height: 40px;
-	text-transform: uppercase;
+	width: 3rem;
 
-	background-color: #2B2C32;
-	color: white;
+}
 
-	border-radius: 20px;
-	outline: none;
-	border: none;
+#legend{
+	
+	margin-bottom: 5rem;
+}
+
+#legend span{
+	
+
+	margin: 0 0.7rem;
+	padding: .2rem;
+}
+
+
+#buttons input{
+	padding: 0.7rem;
+	margin: 0.5rem;
+	border-radius: 1rem;
+	border: 1px #f1f1f1 solid;
 
 	cursor: pointer;
+	text-transform: uppercase;
+	background: rgb(59, 57, 57);
+	color:white;
 
-	border:1px black solid;
-
-
-}
-
-
-section#buttons input:hover{
-	background: #4A4C55;
-	border:1px #838692 solid;
-}
-
-
-
-section#buttons{
-	margin-top: 40px;
+	transition: background 0.3s,
+				transform 0.3s;
 
 
 }
 
+#buttons input:hover{
+	background: rgb(83, 81, 81);
+	transform: translateY(-3px);
+}
+	
+	
+
+
+
+
+
+
+
+
+
+@media (min-width: 700px){
+	
+	#timer{
+		font-size: 3.5rem;
+	}
+
+	#timer span{
+		width: 5rem;
+	}
+	
+
+	#legend{
+		font-size: 1.2rem;
+		
+		
+	}
+	#legend span{
+		margin: 0 1.2rem;
+	}
+
+
+	#buttons input{
+		font-size: 1.3rem;
+		padding: 0.5rem;
+		margin: 0 2rem;
+		
+
+		
+	}
+}
+	
+	
+@media (max-width: 370px){
+
+	#timer{
+		font-size: 2rem;
+	}
+	
+	#legend{
+		font-size: .8rem;
+		
+		
+	}
+	
+	#button input{
+		font-size: 1rem;
+		padding: 0.2rem;
+		margin: 0 0.6rem;
+	}
+	
+	
+}

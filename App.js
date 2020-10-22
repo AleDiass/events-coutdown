@@ -1,4 +1,4 @@
-const bg = document.getElementById("imgbackground")
+const bg = document.getElementById("main-div")
 const title = document.getElementById("event-name")
 const btnNY = document.getElementById("btnNY") 
 const btnES = document.getElementById("btnES")
@@ -26,8 +26,8 @@ function App(event){
 
 	// Change Bg Image
 
-	bg.style.background = `url(./imgs/${event}.jpg) bottom`
-	bg.position = 'relative'
+	bg.style.background = `url(./imgs/${event}.jpg) center`
+	bg.style.backgroundSize = 'cover'
 	
 	
 
@@ -239,14 +239,3 @@ function CheckValue(){
 
 }
 
-//Not Working
-
-/*
-function InsertData(day,hour,min,sec){
-	days.innerText = day
-	hours.innerText = hour
-	minutes.innerText = min
-	seconds.innerText = sec
-}
-
-*/
