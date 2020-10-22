@@ -2,9 +2,9 @@
 
 
 
-**A Simple New Year / Easter / Christmas Countdown 
+**A Simple New Year / Easter / Christmas Countdown** 
 
-Demo : **https://alediass.github.io/events-coutdown/
+Demo : **https://alediass.github.io/events-coutdown/**
 
-**JavaScript , css , html
+**JavaScript , css , html**
 
