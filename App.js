@@ -1,5 +1,5 @@
 
-
+	const EventName = document.getElementById('event-name')
 	const days = document.getElementById('days')
 	const hours = document.getElementById('hours')
 	const minutes = document.getElementById('minutes')
@@ -7,6 +7,9 @@
 	
 	// Start Timer Var
 	let Start;
+
+
+
 
 
 let ClickButton = function(Target){
@@ -18,33 +21,33 @@ let ClickButton = function(Target){
 	DisableButtons(Target)
 	
 
-	// Check Year // 
+	// Check Data ///// 
 
-	let ChristmasTime = new Date(AtualTimeBTN.getFullYear(),11,24)
-	
-	
-	
-	//
-	let EasterTime = new Date(AtualTimeBTN.getFullYear(),03,03)
-	//
-	
-	// Check Event Date
-	if(AtualTimeBTN.getTime() > EasterTime.getTime()){
-		EasterTime.setFullYear(AtualTimeBTN.getFullYear()+1)
-	}
-
-	
-
-	//
-	let NewYearTime = new Date(AtualTimeBTN.getFullYear()+1,00,01)
-
-	//
-	if(AtualTimeBTN.getTime() > NewYearTime.getTime()){
+		let ChristmasTime = new Date(AtualTimeBTN.getFullYear(),11,24)
 		
-		NewYearTime.setFullYear(AtualTimeBTN.getFullYear()+1)
-	}
+		
+		
+		//
+		let EasterTime = new Date(AtualTimeBTN.getFullYear(),03,03)
+		//
+		
+		// Check Event Date
+		if(AtualTimeBTN.getTime() > EasterTime.getTime()){
+			EasterTime.setFullYear(AtualTimeBTN.getFullYear()+1)
+		}
 
-	
+		
+
+		//
+		let NewYearTime = new Date(AtualTimeBTN.getFullYear()+1,00,01)
+
+		//
+		if(AtualTimeBTN.getTime() > NewYearTime.getTime()){
+			
+			NewYearTime.setFullYear(AtualTimeBTN.getFullYear()+1)
+		}
+
+	////////////////
 
 	
 	// Start
@@ -52,16 +55,19 @@ let ClickButton = function(Target){
 	if(Target == 'CH'){
 		clearInterval(Start)
 		Start = setInterval(()=>Timer(ChristmasTime),1000)
+		EventName.innerText = 'Christmas Countdown'
 	}
 
 	if(Target == 'NY'){
 		clearInterval(Start)
 		Start = setInterval(()=>Timer(NewYearTime),1000)
+		EventName.innerText = 'New Yea Countdown'
 	}
 
 	if(Target == 'ES'){
 		clearInterval(Start)
 		Start = setInterval(()=>Timer(EasterTime),1000)
+		EventName.innerText = 'Easter Countdown'
 	}
 	
 }	
