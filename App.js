@@ -61,7 +61,7 @@ let ClickButton = function(Target){
 	if(Target == 'NY'){
 		clearInterval(Start)
 		Start = setInterval(()=>Timer(NewYearTime),1000)
-		EventName.innerText = 'New Yea Countdown'
+		EventName.innerText = 'New Year Countdown'
 	}
 
 	if(Target == 'ES'){
