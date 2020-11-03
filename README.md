@@ -1,4 +1,12 @@
-# events-coutdown
-A Simple New Year / Easter / Christmas Countdown 
+### Events CoutDown Timer 
+ - New Year CoutDown
+ - Easter CoutDown
+ - Chrismas CoutDown
 
-Demo: https://alediass.github.io/events-coutdown/
+#### Created With:
+  - JavaScript 
+  - Css 
+  - HTML
+  
+#### Demo: 
+  - https://alediass.github.io/events-coutdown/
