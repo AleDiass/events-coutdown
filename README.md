@@ -10,9 +10,9 @@
 
 **:santa:** **New Year** Coutdown
 
-**:fireworks:** **Easter Day** Coutdown
+**:egg:** **Easter Day** Coutdown
 
-**:egg:** **Chrismas** Coutdown
+**:fireworks:** **Chrismas** Coutdown
 
 </section >
 
