@@ -23,13 +23,10 @@ let ClickButton = function(Target){
 
 	// Check Data ///// 
 
-		let ChristmasTime = new Date(AtualTimeBTN.getFullYear(),11,24)
-		
-		
-		
-		//
+		let ChristmasTime = new Date(AtualTimeBTN.getFullYear(),11,25)
+		let NewYearTime = new Date(AtualTimeBTN.getFullYear()+1,00,01)
 		let EasterTime = new Date(AtualTimeBTN.getFullYear(),03,03)
-		//
+		
 		
 		// Check Event Date
 		if(AtualTimeBTN.getTime() > EasterTime.getTime()){
@@ -38,13 +35,12 @@ let ClickButton = function(Target){
 
 		
 
-		//
-		let NewYearTime = new Date(AtualTimeBTN.getFullYear()+1,00,01)
+		
 
 		//
-		if(AtualTimeBTN.getTime() > NewYearTime.getTime()){
+		if(AtualTimeBTN.getTime() > ChristmasTime.getTime()){
 			
-			NewYearTime.setFullYear(AtualTimeBTN.getFullYear()+1)
+			ChristmasTime.setFullYear(AtualTimeBTN.getFullYear()+1)
 		}
 
 	////////////////
